@@ -57,3 +57,20 @@ footer .fblack{
     position: absolute;
     bottom: 0;
 }
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+}
+
+.circle .circle2 {
+    position: absolute;
+    z-index: 2;
+    top: 47px;
+}
