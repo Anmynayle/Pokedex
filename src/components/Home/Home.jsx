@@ -18,9 +18,10 @@ const Home = () => {
        </form>
       </div>
       <footer className='footerHero'>
+       <div className='fblack'></div>
         <div className='circle'>
-          <img  className='circle2' src="src\assets\img\homeHero\Ellipse 3.svg" alt="" />
-          <img src="src\assets\img\homeHero\Ellipse 4.svg" alt="" />
+          <img src="src\assets\img\homeHero\Ellipse 3.svg" alt="" />
+          <img className='circle2' src="src\assets\img\homeHero\Ellipse 4.svg" alt="" />
         </div>
        <div className='fblack'></div>
       </footer>
