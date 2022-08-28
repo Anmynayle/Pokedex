@@ -9,7 +9,7 @@ const Home = () => {
           <img src="src\assets\img\image 11.svg" alt="" />
        </div>
        <div className='heroTitlePrincipal'>
-          <h2>¡Hola entrenador!</h2>
+          <h2>¡Hola entrenador!!</h2>
           <h3>Para poder comenzar, dame tu nombre</h3>
        </div>
        <form>
