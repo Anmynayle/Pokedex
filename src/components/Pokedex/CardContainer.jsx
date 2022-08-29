@@ -7,7 +7,7 @@ if(!pokemonSearch){
     return (
         <div className="container_CardPoke">
         {
-          pokemons?.results.map(pokemon=>(
+          pokemons?.map(pokemon=>(
             <PokemonCard
              key={pokemon.url}
              url={pokemon.url}
