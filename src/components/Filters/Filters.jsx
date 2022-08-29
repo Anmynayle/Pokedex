@@ -17,6 +17,7 @@ useEffect(() => {
   useEffect(() => {
     let change = []
     if (filterPokemon){
+        //recorro filter pokemon y push solo a la posicion donde esta pokemonpara que me quedwe como el stado de la url unica
         for (let i = 0; i < filterPokemon.length; i++) {
             const element = filterPokemon[i].pokemon;
             change.push(element)
@@ -25,9 +26,6 @@ useEffect(() => {
     }
 
     }, [filterPokemon])
-
- 
-  
 
     function handleFilter2 (e){
         axios.get(`https://pokeapi.co/api/v2/type/${e.target.value}`)
@@ -38,7 +36,7 @@ useEffect(() => {
 
   return (
     <div>
-    <select onChange={handleFilter2}>
+    <select className='filter_options' onChange={handleFilter2}>
         <option value=''>All</option>
         {
             typePokemon?.map(pokemons => (
