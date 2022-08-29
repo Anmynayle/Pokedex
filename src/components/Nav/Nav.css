@@ -1,0 +1,43 @@
+.container_header{
+    width: 100%;
+    height: 180px;
+    background-color: #DD1A1A;
+    position: relative;
+
+  
+}
+.hblack{
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+.logo{
+    bottom: 53px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 120px;
+}
+.circle_c{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} 
+
+.circle_c img{
+    position: absolute;
+    z-index: 2;
+    top:80px;
+    margin-right: 85px;
+  
+}
+
+.circle_c .circle__2 {
+    position: absolute;
+    z-index: 3;
+    top:107px;
+    right: 25px;
+   
+}  

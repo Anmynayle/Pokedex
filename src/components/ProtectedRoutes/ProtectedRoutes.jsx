@@ -1,9 +1,17 @@
 import React from 'react'
+import {Navigate, Outlet} from 'react-router-dom'
+import { useSelector } from "react-redux";
 
 const ProtectedRoutes = () => {
-  return (
-    <div>ProtectedRoutes</div>
-  )
+
+  const nameTrainer=useSelector((state)=>state.nameTrainer)
+ 
+//console.log(nameTrainer)
+  if (nameTrainer){
+    return <Outlet />
+  }else{
+    return <Navigate to='/'/>
+  }
 }
 
 export default ProtectedRoutes

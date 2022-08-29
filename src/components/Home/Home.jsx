@@ -1,6 +1,26 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import {useNavigate} from 'react-router-dom'
+import { setNameTrainer } from '../../store/slice/nameTrainer.slice'
 import './Home.css'
 const Home = () => {
+
+  
+
+  const dispatch=useDispatch()
+
+  const navigate=useNavigate()
+
+  const handleSubmit =  e =>{
+    e.preventDefault()
+    const inputValue=e.target.name.value.trim()
+    if(inputValue.length != 0){
+      dispatch(setNameTrainer(inputValue))
+      navigate('/pokedex')
+    }
+    e.target.name.value=''
+  };
+
     
   return (
     <section className='heroPokemon'>
@@ -9,10 +29,10 @@ const Home = () => {
           <img src="src\assets\img\image 11.svg" alt="" />
        </div>
        <div className='heroTitlePrincipal'>
-          <h2>¡Hola entrenador!!</h2>
-          <h3>Para poder comenzar, dame tu nombre</h3>
+          <h2>¡Hello Trainer!!</h2>
+          <h3>Give me your name to start</h3>
        </div>
-       <form>
+       <form onSubmit={handleSubmit}>
           <input id='name' type="text" placeholder='Tu Nombre..' />
           <button>Comenzar</button>
        </form>
