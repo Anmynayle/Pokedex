@@ -14,8 +14,8 @@ const PokemonCard = ({url}) => {
   }, [url])
  
   return (
-      <article className='card_container'>
-        <header className='header_card'>
+      <article className={`card_container bd-${poke?.types[0].type.name}`}>
+        <header className={`header_card bg-${poke?.types[0].type.name}`}>
           <img src={poke?.sprites.other["official-artwork"]["front_default"]} alt="" />
         </header>
         <section className='card_body'>

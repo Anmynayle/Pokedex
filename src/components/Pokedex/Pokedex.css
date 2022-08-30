@@ -17,6 +17,7 @@
 
 .container_CardPoke{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap:10px;
     margin-top: 40px;
