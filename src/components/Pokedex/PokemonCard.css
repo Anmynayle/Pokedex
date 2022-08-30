@@ -55,6 +55,8 @@
 .action_menu{
     display: flex;
     justify-content: space-between;
-    
+    gap:1em;
+    flex-wrap: wrap;
+     padding: 0 120px;
 }
 
