@@ -3,14 +3,13 @@
     height: 380px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     border: #7EC6C5 solid 5px;
     border-radius: 10px;
 }
 
 .header_card{
  padding: 0;
- width: 100%;
+ width: 101.1%;
  background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
  height: 120px;
  display: flex;
