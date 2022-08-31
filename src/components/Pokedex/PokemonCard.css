@@ -5,7 +5,13 @@
     flex-direction: column;
     border: #7EC6C5 solid 5px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.card_container:hover {
+    transform: scale(1.05);
+    transition: transform 200ms ease;
+  }
 .bd-fire{
     border:#E35825 solid 5px;
 }
