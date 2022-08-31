@@ -27,7 +27,7 @@ const Pokedex = () => {
     .catch(err=>console.log(err))
   }, [])
 
-
+console.log(pokemons)
   return (
     <div>
       <Nav/>
@@ -38,7 +38,9 @@ const Pokedex = () => {
        <Search pokemonSearch={pokemonSearch} setPokemonSearch={setPokemonSearch}/>
        <Filters setPokemons={setPokemons}/>
        </div>
-       <CardContainer  pokemons={pokemons} setPokemons={setPokemons} pokemonSearch={pokemonSearch}/>
+   
+          <CardContainer  pokemons={pokemons} setPokemons={setPokemons} pokemonSearch={pokemonSearch}/>
+    
     </div>
   )
 }
