@@ -26,7 +26,7 @@ const Home = () => {
     <section className='heroPokemon'>
       <div className="heroBody">
        <div className='logoI'>
-          <img src="src\assets\img\image 11.svg" alt="" />
+          <img src="public\img\image 11.svg" alt="" />
        </div>
        <div className='heroTitlePrincipal'>
           <h2>¡Hello Trainer!!</h2>
