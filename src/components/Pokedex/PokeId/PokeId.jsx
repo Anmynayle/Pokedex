@@ -61,8 +61,19 @@ const PokeId = () => {
                           ))
                     }
             </div>
-           
             </div>
+            <div className="container_statDet">
+              <h2>Stats</h2>
+              <img src="src\assets\img\Vector 9.svg" alt=""/>
+               <ul>
+                  <li> 
+                    <h3>Hp:</h3>
+                    <div className="hp">
+                      <div className="valhP"></div>
+                    </div>
+                  </li>
+               </ul>
+          </div>
           </div>
       
       </div>

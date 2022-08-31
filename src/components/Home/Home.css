@@ -1,3 +1,10 @@
+h3,h2{
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
 .heroPokemon{
     background-color: white;
     min-height: 100vh;
@@ -10,6 +17,13 @@
     align-items: center;
     gap:7%;
     height: calc(100vh - 150px);
+}
+
+.heroTitlePrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .heroTitlePrincipal h2{
@@ -27,6 +41,8 @@
     font-size: 25px;
     color: #302F2F;
 }
+
+
  .heroBody input{
     width: 400px;
     height: 50px;
@@ -74,3 +90,36 @@ footer .fblack{
     z-index: 2;
     top: 47px;
 }
+
+@media (max-width:1200px){
+    .logoI{
+       transform: scale(0.4);
+       padding-right: 85px;
+    }
+     
+    .heroTitlePrincipal h2{
+        font-size: 30px; 
+    }
+
+    .heroTitlePrincipal h3{
+        
+        font-size: 20px;
+        margin-right: 20px;
+    }
+}
+    @media (max-width:700px){
+  
+        .heroBody input{
+            width: 200px;
+            height: 50px;
+           
+        }
+        .heroBody button{
+            width:80px;
+            height: 50px;
+            border: none;
+            background-color: #D93F3F;
+            color: white;
+        }
+ 
+    }

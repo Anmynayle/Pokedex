@@ -72,6 +72,7 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .type{
@@ -116,13 +117,20 @@
 }
 
 .container_statDet{
-    border: 1px solid black;
-    width: 1000px;
-    height: 100px;
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .container_statDet h2{
-    font-size: 45px;
-    font-weight: 500;
-    margin-top: 20px;
-} 
+    font-size: 25px;
+    font-weight: 400;
+}
+.hp{
+    min-width: 700px;
+    height: 34px;
+    background-color: red;
+}
+.valhP{
+    width:50%;
+    height:34px;
+    background-color: black;
+}

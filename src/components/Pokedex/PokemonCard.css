@@ -1,6 +1,6 @@
 .card_container{
     width: 260px;
-    height: 380px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     border: #7EC6C5 solid 5px;
@@ -187,3 +187,11 @@ background:linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 2
      padding: 0 120px;
 }
 
+@media (max-width:700px){
+  
+  .action_menu{
+    padding: 0 60px;
+    margin-left: 30px;
+  }
+
+}
