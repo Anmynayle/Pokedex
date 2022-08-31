@@ -7,7 +7,7 @@ const CardContainer = ({pokemons,pokemonSearch}) => {
 
   const [page, setPage] = useState(1)
 
-  const [forPage, setForPage] = useState(9)
+  const [forPage, setForPage] = useState(18)
 
   const maximo = Math.ceil(pokemons?.length / forPage)
 
@@ -25,8 +25,10 @@ if(!pokemonSearch){
             />
           ))
         }
+        <div className="conteiner-pagination">
         <Pagination page={page} setPage={setPage} maximo={maximo}/>
         </div>
+      </div>
   )
 }else{
     return(

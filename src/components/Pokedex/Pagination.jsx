@@ -1,4 +1,5 @@
 import React from 'react'
+import './Pagination.css'
 import { useState } from 'react'
 
 const Pagination = ({ page, setPage, maximo }) => {
