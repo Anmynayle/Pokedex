@@ -2,7 +2,7 @@ import React from 'react'
 import PokemonCard from './PokemonCard'
 
 const CardContainer = ({pokemons,pokemonSearch}) => {
-
+console.log(pokemonSearch)
 if(!pokemonSearch){
     return (
         <div className="container_CardPoke">
