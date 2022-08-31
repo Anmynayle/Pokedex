@@ -7,7 +7,7 @@ const CardContainer = ({pokemons,pokemonSearch}) => {
 
   const [page, setPage] = useState(1)
 
-  const [forPage, setForPage] = useState(18)
+  const [forPage, setForPage] = useState(16)
 
   const maximo = Math.ceil(pokemons?.length / forPage)
 

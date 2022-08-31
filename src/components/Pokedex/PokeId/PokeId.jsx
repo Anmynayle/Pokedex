@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom"
 import axios from 'axios'
 import Nav from '../../Nav/Nav';
 import './PokeId.css'
+import Progress from './Progress';
+import Movements from './Movements';
 
 const PokeId = () => {
 
@@ -20,6 +22,7 @@ const PokeId = () => {
 
   console.log(pokedeta)
 
+  
   return (
     <div>
       <Nav />
@@ -49,7 +52,7 @@ const PokeId = () => {
                 <h2>Types</h2>
                     {
                         pokedeta?.types.map(slot => (
-                        <li className='slot' key={slot.type.url}>{slot.type.name[0].toUpperCase() + slot.type.name.slice(1)}</li>
+                        <li className={`slot bg-${pokedeta?.types[0].type.name}`} key={slot.type.url}>{slot.type.name[0].toUpperCase() + slot.type.name.slice(1)}</li>
                         ))
                     }
             </div>         
@@ -62,18 +65,8 @@ const PokeId = () => {
                     }
             </div>
             </div>
-            <div className="container_statDet">
-              <h2>Stats</h2>
-              <img src="src\assets\img\Vector 9.svg" alt=""/>
-               <ul>
-                  <li> 
-                    <h3>Hp:</h3>
-                    <div className="hp">
-                      <div className="valhP"></div>
-                    </div>
-                  </li>
-               </ul>
-          </div>
+           <Progress pokedeta={pokedeta}/>
+           <Movements pokedeta={pokedeta}/>
           </div>
       
       </div>

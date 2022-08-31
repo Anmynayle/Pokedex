@@ -1,0 +1,62 @@
+.titleMove{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+.titleMove h2{
+    font-size: 30px;
+    font-weight: 400; 
+    text-align: center;
+}
+
+.movements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap:10px;
+    flex-wrap:wrap;
+    width: 700px;
+ 
+}
+.movies{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 100px;
+
+}
+.move{
+    border: 1px solid  #E5E5E5;;
+    border-radius: 20%;
+    display: flex;
+    width: 124px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+  
+}
+.move li{
+    color:#302F2F ;
+    font-size: 24px;
+    font-weight: 400px;
+
+}
+@media (max-width:650px){
+    
+    .movements{
+        width: 400px;
+     
+    }
+    .movies{
+      
+        padding-left: 170px;
+    }
+    
+}
