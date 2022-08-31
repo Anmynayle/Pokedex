@@ -23,7 +23,7 @@ const Progress = ({pokedeta}) => {
           <div className="container_progre">
           <div className="title_cont">
             <h2>Hp:</h2>
-            <h3>{`${subsPercentHP}%`}</h3> 
+            <h3>{`${subsPercentHP.toFixed()}%`}</h3> 
           </div>
             <div className="progress-bar">
               <span style={{ width: `${subsPercentHP}%` }}></span>
