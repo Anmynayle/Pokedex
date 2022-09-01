@@ -1,99 +1,23 @@
-.card_container{
-    width: 260px;
-    height: 360px;
+
+.container_det{  
+    border: 1px solid black;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    border: #7EC6C5 solid 5px;
-    border-radius: 10px;
-    cursor: pointer;
+    justify-content: center; 
+ 
+    flex-wrap: wrap;
 }
-
-.card_container:hover {
-    transform: scale(1.05);
-    transition: transform 200ms ease;
-  }
-.bd-fire{
-    border:#E35825 solid 5px;
-}
-.bd-normal{
-    border:#735259 solid 5px;
-}
-.bd-water{
-border:  #133258 solid 5px;
-}
-.bd-fighting{
-    border: #96402A solid 5px;
-}
-.bd-poison{
-    border: #7EC6C5 solid 5px;
-}
-.bd-ground{
-border:  #654008 solid 5px;
-}
-.bd-rock{
-    border: #7E7E7E solid 5px;
-}
-.bd-bug{
-    border: #62DB60 solid 5px;
-} 
-.bd-ghost{
-border: #323569 solid 5px;
-}
-.bd-steel{
-    border: #0C1395  solid 5px;
-}
-
-.bd-electric{
-border:  #133258 solid 5px;
-}
-.bd-fighting{
-    border: #96402A solid 5px;
-}
-.bd-poison{
-    border: #7EC6C5 solid 5px;
-}
-.bd-ground{
-border:  #654008 solid 5px;
-}
-.bd-rock{
-    border: #7E7E7E solid 5px;
-}
-.bd-bug{
-    border: #62DB60 solid 5px;
-} 
-.bd-ghost{
-border: #323569 solid 5px;
-}
-.bd-electric{
-    border: #323569 solid 5px;
-}
-.bd-fairy{
-    border:  #971B45 solid 5px;
-}
-.bd-ice{
-  border : #6FBEDF solid 5px;
-}
-.bd-dragon{
-    border : #478a93 solid 5px;
-}
-.bd-dark{
-    border: #030706 solid 5px;
-}
-.bd-psychic{
-    border :#5E736C solid 5px; 
-}
-
-.header_card{
-    padding: 0;
-    width: 101%;
+.header_det{
+    margin-top: 100px;
+    width: 100%;
     background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
-    height: 120px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
+    z-index: -1;
 }
-
 .bg-fire{
     background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
 }
@@ -150,54 +74,134 @@ background:linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 2
 .bg-psychic{
    background:  linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
 }
-.header_card img{
-    width: 162px;
-    height: 149px;
-    margin-top: 30px;
+.header_det img{
+    margin-top: 0;
+    position: absolute;
+    z-index: 1;
+    height: 500px;
 }
-
-.card_body{
+.card_id{
+    margin-top: 500px;
+}
+.card_id h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.title{
+    margin-top: 30px;
+    font-size: 2rem;  
+   text-align: center;
+}
+.dimensions{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+.weight{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 30px;
-
 }
-.card_slot{
-    display: flex;
-    gap:8px;
-}
-.card_slot li{
-    list-style: none;
+.weight h4{
     font-size: 16px;
-   
+}
+.weight h3{
+    font-size: 25px;
+}
+.height h4{
+    font-size: 16px;
+}
+.height h3{
+    font-size: 25px;
 }
 
-/*Stat*/
-.container_stat{
+.height{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerTipA{
+    display: flex;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.type{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   margin-top: 10px;
+   gap: 10px;
+   width: 400px;
+   flex-wrap: wrap;
+}
+
+.skills{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-top: 10px;
     gap: 10px;
-  
-}
-/*Actions*/
-.action_menu{
-    display: flex;
-    justify-content: space-between;
-    gap:1em;
+    width: 400px;
     flex-wrap: wrap;
-     padding: 0 120px;
+}
+.slot {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7EC6C5;
+    height: 40px;
+    width: 200px;
+}
+.abilit{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background: #D3D3D3;
+    height: 40px;
+    width: 200px;
 }
 
-@media (max-width:700px){
-  
-  .action_menu{
-    padding: 0 60px;
-    margin-left: 30px;
-  }
+.titleStat{
+    display: flex;
+    justify-content: center;
+}
+.titleStat h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.container_statDet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    gap:30px;
+    flex-wrap:wrap;
+    
+}
 
+
+@media (max-width:500px){
+    
+    .header_det{
+        height: 200px;
+    }
+    .header_det img{
+     width: 300px;
+     height: 300px;
+    }
+
+    .card_id{
+        margin-top: 400px;
+    }
 }

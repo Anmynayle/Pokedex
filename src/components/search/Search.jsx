@@ -18,7 +18,7 @@ const Search = ({pokemonSearch,setPokemonSearch}) => {
     }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form  className='search-form' onSubmit={handleSubmit}>
         <input className="search" 
         id='search' 
         type="text"       

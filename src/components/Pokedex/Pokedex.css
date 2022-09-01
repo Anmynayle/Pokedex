@@ -19,10 +19,21 @@
 
 .container_CardPoke{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap:10px;
     margin-top: 40px;
     margin-left: 120px;
     margin-right: 25px;
+
+}
+@media (max-width:700px){
+  
+    .saludo{
+        margin-left: 20px;
+    }
+    .container_CardPoke{
+        margin-left: 40px;
+    }
 
 }

@@ -19,15 +19,21 @@ const Pokedex = () => {
 
   const [typePokemon, setTypePokemon] = useState()
 
+  const [load, setLoad] = useState()
+
+
 
   useEffect(() => {
     const url=`https://pokeapi.co/api/v2/pokemon`
     axios.get(url)
-    .then(res=>setPokemons(res.data.results))
+    .then(res=>{
+      setPokemons(res.data.results)
+      setLoad(false)
+    })
     .catch(err=>console.log(err))
   }, [])
 
-
+console.log(pokemons)
   return (
     <div  className='body-pokedex'>
       <Nav/>
@@ -38,7 +44,9 @@ const Pokedex = () => {
        <Search pokemonSearch={pokemonSearch} setPokemonSearch={setPokemonSearch}/>
        <Filters setPokemons={setPokemons}/>
        </div>
-       <CardContainer  pokemons={pokemons} setPokemons={setPokemons} pokemonSearch={pokemonSearch}/>
+   
+          <CardContainer  load={load} setLoad={setLoad} pokemons={pokemons} setPokemons={setPokemons} pokemonSearch={pokemonSearch}/>
+    
     </div>
   )
 }
