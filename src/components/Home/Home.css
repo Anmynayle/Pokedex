@@ -1,6 +1,7 @@
 .heroPokemon{
     background-color: white;
-    min-height: 100vh;
+    min-height: 100%;
+    min-width: 320px;
 
 }
 .heroBody{
@@ -11,24 +12,33 @@
     gap:7%;
     height: calc(100vh - 150px);
 }
+.heroBody img {
+    width: 500px;
+}
 
 .heroTitlePrincipal h2{
+    text-align: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: clamp(2rem, 4vw, 4rem); 
     color:#FE1936;
 }
 
 .heroTitlePrincipal h3{
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: clamp(2rem, 4vw, 4rem); 
     color: #302F2F;
 }
+
+.heroBody{
+    min-width: 250px;
+}
  .heroBody input{
-    width: 400px;
+    width: 250px;
     height: 50px;
     border : none;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
@@ -73,4 +83,43 @@ footer .fblack{
     position: absolute;
     z-index: 2;
     top: 47px;
+}
+
+@media (max-width: 500px) {
+   .heroBody img{
+    width: 400px;
+   }
+   .heroBody input{
+    width: 200px;
+    height: 50px;
+   }
+    .heroBody button{
+        width:150px;
+        height: 50px;
+    }
+}
+@media (max-width: 400px) {
+   .heroBody img{
+    width: 350px;
+   }
+
+
+}
+@media (max-width: 350px) {
+   .heroBody img{
+    width: 300px;
+   }
+   .heroBody input{
+    width: 150px;
+    height: 50px;
+   }
+    .heroBody button{
+        width:80px;
+        height: 50px;
+    }
+}
+@media (max-width: 320px) {
+   .heroBody img{
+    width: 315px;
+   }
 }

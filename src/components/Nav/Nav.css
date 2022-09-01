@@ -12,31 +12,32 @@
     background-color: black;
     position: absolute;
     bottom: 0;
-    z-index: 2;
+    
 }
 .logo{
     bottom: 53px;
     position: absolute;
-    z-index: 1;
+   
     margin-left: 120px;
 }
 .circle_c{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
 } 
 
 .circle_c img{
     position: absolute;
-    z-index: 2;
-    top:80px;
-    margin-right: 85px;
+    z-index: 1;
+    top: 80px;
+    margin-right: 7%;
   
 }
 
 .circle_c .circle__2 {
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     top:107px;
     right: 25px;
    

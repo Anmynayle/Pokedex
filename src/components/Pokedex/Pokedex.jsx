@@ -29,7 +29,7 @@ const Pokedex = () => {
 
 
   return (
-    <div>
+    <div  className='body-pokedex'>
       <Nav/>
       <div className="saludo">
         <p><span>Welcome {nameTrainer},</span>  here you can find all the info about your pokemons</p>
