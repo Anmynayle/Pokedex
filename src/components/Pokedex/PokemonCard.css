@@ -1,11 +1,10 @@
 .card_container{
     width: 260px;
     height: 360px;
-    display: flex;
-    flex-direction: column;
-    border: #7EC6C5 solid 5px;
+     border: #7EC6C5 solid 5px;
     border-radius: 10px;
     cursor: pointer;
+    position:relative;
 }
 
 .card_container:hover {
@@ -84,14 +83,10 @@ border: #323569 solid 5px;
 }
 
 .header_card{
-    padding: 0;
-    width: 101%;
-    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
-    height: 120px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    height: 120px;
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
 }
 
 .bg-fire{
@@ -154,6 +149,7 @@ background:linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 2
     width: 162px;
     height: 149px;
     margin-top: 30px;
+    position: absolute;
 }
 
 .card_body{
@@ -162,8 +158,8 @@ background:linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 2
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
-
+   padding-top: 60px;
+  
 }
 .card_slot{
     display: flex;
