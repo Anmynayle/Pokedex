@@ -4,14 +4,17 @@ import  './Nav.css'
 const Nav = () => {
 
   return (
-    <div className='container_header'>
-        <img className='logo ' src="img\image11.svg" alt="" />
-        <div className='hblack'></div>
-        <div className='circle_c'>
-          <img src="img\navHero\Ellipse 3.svg" />
-          <img className='circle__2' src="img/navHero/Ellipse 4.svg" alt="" />
+    <header className='header-Pokedex'>
+    <div className='logo-pokedex'>
+        <img src="img/navHero/logoheader.svg" alt="" />
+    </div>
+    <div className='black-line'>
+        <div className="closet-ball">
+            <img src="img/navHero/Ellipse 3.svg" alt="" />
+            <img className='ball-point' src="img/navHero/Ellipse 4.svg" alt="" />
         </div>
     </div>
+</header>
   )
 }
 
