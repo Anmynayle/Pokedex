@@ -29,7 +29,7 @@ const Home = () => {
           <img src="src\assets\img\image 11.svg" alt="" />
        </div>
        <div className='heroTitlePrincipal'>
-          <h2>¡Hello Trainer!!</h2>
+          <h2>¡Hello Trainer!</h2>
           <h3>Give me your name to start</h3>
        </div>
        <form onSubmit={handleSubmit}>
