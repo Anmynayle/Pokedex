@@ -26,10 +26,10 @@ const Home = () => {
     <section className='heroPokemon'>
       <div className="heroBody">
        <div className='logoI'>
-          <img src="https://i.ibb.co/fXhRhyF/image-logo.png" alt="" />
+          <img src="img\image11.svg" alt="" />
        </div>
        <div className='heroTitlePrincipal'>
-          <h2>¡¡Hello Trainer!!</h2>
+          <h2>¡Hello Trainer!!</h2>
           <h3>Give me your name to start</h3>
        </div>
        <form onSubmit={handleSubmit}>
@@ -40,7 +40,7 @@ const Home = () => {
       <footer className='footerHero'>
        <div className='fblack'></div>
         <div className='circle'>
-          <img src="src\assets\img\punta-poke.png" alt="" />
+          <img src="img\homeHero\Ellipse 3.svg" alt="" />
         </div>
        <div className='fblack'></div>
       </footer>
