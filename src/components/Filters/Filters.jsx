@@ -35,16 +35,14 @@ useEffect(() => {
   
 
   return (
-    <div>
     <select className='filter_options' onChange={handleFilter2}>
-        <option value=''>All</option>
+        <option value=''>All Pokemons</option>
         {
             typePokemon?.map(pokemons => (
-                <option  value={pokemons.name} key={pokemons.name}>{pokemons.name}</option>
+                <option className='txt-center' value={pokemons.name} key={pokemons.name}>{pokemons.name}</option>
             ))
         }
     </select>
-    </div>
   )
 }
 export default Filters

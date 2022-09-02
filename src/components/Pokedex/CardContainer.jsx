@@ -2,6 +2,8 @@ import React from 'react'
 import Pagination from './Pagination'
 import PokemonCard from './PokemonCard'
 import { useState } from 'react'
+import './CardContainer.css'
+
 
 const CardContainer = ({pokemons,pokemonSearch}) => {
 
@@ -13,22 +15,26 @@ const CardContainer = ({pokemons,pokemonSearch}) => {
 
 if(!pokemonSearch){
     return (
-        <div className="container_CardPoke">
-        {
-          pokemons?.slice(
-            (page -1)* page,
-            (page -1) * forPage + forPage
-          ).map(pokemon=>(
-            <PokemonCard
-             key={pokemon.url}
-             url={pokemon.url}
-            />
-          ))
-        }
-        <div className="conteiner-pagination">
-        <Pagination page={page} setPage={setPage} maximo={maximo}/>
-        </div>
-      </div>
+      <section>
+          <div className="container_CardPoke">
+            {
+              pokemons?.slice(
+                (page -1)* page,
+                (page -1) * forPage + forPage
+              ).map(pokemon=>(
+                <PokemonCard
+                key={pokemon.url}
+                url={pokemon.url}
+                />
+              ))
+            }
+         </div>
+
+         <footer className="conteiner-pagination">
+            <Pagination page={page} setPage={setPage} maximo={maximo}/>
+          </footer>
+          
+      </section>
   )
 }else{
     return(
