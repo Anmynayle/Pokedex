@@ -3,10 +3,18 @@
 }
 
 .saludo{
-    display: flex;
-    margin-top: 30px;
-    margin-left: 120px;
+    
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 10px 30px 10px 10px;
+    text-align: center;
 }
+
+.saludo p,
+.saludo p span{
+    font-size: clamp(24px, 5vw, 35px);
+}
+
 
 .filt{
     display: flex;
@@ -20,12 +28,12 @@
 .saludo span{
     color: #FE1936;
     font-weight: 700;
-    font-size: 24px;
+    
     
 }
 .saludo p{
     font-weight: 400px;
-    font-size: 24px;
+    
 }
 
 
