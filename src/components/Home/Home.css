@@ -30,7 +30,7 @@ h3,h2{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: clamp(2rem, 8vw, 4rem);
     color:#FE1936;
 }
 
