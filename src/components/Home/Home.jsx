@@ -40,7 +40,7 @@ const Home = () => {
       <footer className='footerHero'>
        <div className='fblack'></div>
         <div className='circle'>
-          <img src="public\img\punta-poke.png" alt="" />
+          <img src="https://i.ibb.co/2WL8Y98/punta-poke.png" alt="" />
         </div>
        <div className='fblack'></div>
       </footer>

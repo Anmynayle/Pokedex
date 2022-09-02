@@ -10,8 +10,7 @@ const Nav = () => {
     </div>
     <div className='black-line'>
         <div className="closet-ball">
-            <img src="img/navHero/Ellipse 3.svg" alt="" />
-            <img className='ball-point' src="img/navHero/Ellipse 4.svg" alt="" />
+            <img src="https://i.ibb.co/2WL8Y98/punta-poke.png" alt="" />
         </div>
     </div>
 </header>
