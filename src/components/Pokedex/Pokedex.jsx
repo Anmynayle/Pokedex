@@ -40,12 +40,16 @@ console.log(pokemons)
       <div className="saludo">
         <p><span>Welcome {nameTrainer},</span>  here you can find all the info about your pokemons</p>
       </div>
-      <div className="action_menu">
-       <Search pokemonSearch={pokemonSearch} setPokemonSearch={setPokemonSearch}/>
-       <Filters setPokemons={setPokemons}/>
-       </div>
-   
-          <CardContainer  load={load} setLoad={setLoad} pokemons={pokemons} setPokemons={setPokemons} pokemonSearch={pokemonSearch}/>
+
+      <div className="filt">
+
+        <Search pokemonSearch={pokemonSearch} setPokemonSearch={setPokemonSearch}/>
+
+        <Filters setPokemons={setPokemons}/>
+
+      </div>
+      
+      <CardContainer  load={load} setLoad={setLoad} pokemons={pokemons} setPokemons={setPokemons} pokemonSearch={pokemonSearch}/>
     
     </div>
   )

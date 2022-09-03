@@ -11,12 +11,13 @@
     box-shadow:   0px 3px 6px rgba(0, 0, 0, 0.15);
 
 }
+
 .btn_search{
     width:150px;
     height: 48px;
     border: none;
-    background-color: #D93F3F;
     color: white;
+    background: #D93F3F;
 }
 
 @media (max-width:1024px){
