@@ -19,7 +19,7 @@ const Search = ({pokemonSearch,setPokemonSearch}) => {
 
   return (
     <form  className='search-form' onSubmit={handleSubmit}>
-        <input className="search" 
+        <input className="search-inp" 
         id='search' 
         type="text"       
         placeholder='Search for Pokemon'

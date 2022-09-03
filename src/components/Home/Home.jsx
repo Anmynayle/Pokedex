@@ -33,8 +33,8 @@ const Home = () => {
           <h3>Give me your name to start</h3>
        </div>
        <form onSubmit={handleSubmit}>
-          <input id='name' type="text" placeholder='Tu Nombre..' />
-          <button>Comenzar</button>
+          <input id='name' type="text" placeholder='Name..' />
+          <button>GO</button>
        </form>
       </div>
       <footer className='footerHero'>

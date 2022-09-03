@@ -186,14 +186,17 @@ background:linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 2
     justify-content: space-between;
     gap:1em;
     flex-wrap: wrap;
-     padding: 0 120px;
+    margin-top: 50px;
+    padding: 0 120px;
 }
 
 @media (max-width:700px){
   
   .action_menu{
     padding: 0 60px;
-    margin-left: 30px;
+justify-content: center;
+    
+
   }
 
 }
